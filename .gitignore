@@ -1,0 +1,8 @@
+.idea/**/*
+dist/**/*
+*.iml
+*.xml
+node_modules/**/*
+package-lock.json
+/HW2 - ArtBoard (gulp-scss)_test.zip
+/dist/

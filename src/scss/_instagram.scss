@@ -1,0 +1,35 @@
+.instagram{
+  padding:38px 0 42px;
+  &__naw{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+
+  }
+  &__last{
+    text-decoration: none;
+    &:hover{
+        cursor: pointer;
+      }
+  }
+  &__our{
+    text-decoration: none;
+    display: none;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &__img{
+    width: 301px;
+    height: 301px;
+  }
+}
+
+@media (min-width: 768px) {
+  .instagram {
+    &__our {
+      display: initial;
+      //font-size: 13px;
+    }
+  }
+}
