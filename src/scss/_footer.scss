@@ -36,7 +36,7 @@ footer {
 
 
 .mesenger {
-  &__icon{
+  &__icon {
     margin: 0 3px;
   }
 }
@@ -51,20 +51,34 @@ footer {
 
 @media (min-width: 768px) {
   .footer {
+    padding: 57px 0;
+
     &__text-second {
       display: initial;
     }
-    &__text{
+
+    &__social {
+      margin: 37px auto;
+    }
+
+    &__text {
       font-size: 16px;
       line-height: 28px;
       margin: 8px 38px 0;
     }
-    &__address{
+
+    &__address {
       display: flex;
       justify-content: center;
       font-size: 16px;
       line-height: 26px;
       margin: initial;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 66px 0 70px;
   }
 }

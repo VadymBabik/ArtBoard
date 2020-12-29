@@ -16,9 +16,9 @@ const path = {
     js: devFolder + "/js/*.js",
     img: devFolder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
   },
-    watchers: {
-        scss: devFolder + "/scss/**/*.scss"
-},
+  watchers: {
+    scss: devFolder + "/scss/**/*.scss",
+  },
   clean: sourceFolder,
 };
 
@@ -66,7 +66,7 @@ const style = () =>
     .pipe(browserSync.stream());
 
 const scripts = () =>
-  src(path.src.js)
+  src(["src/js/jquery-3.5.1.min.js", "src/js/slick.min.js", "src/js/script.js"])
     .pipe(concat("scripts.min.js"))
     .pipe(uglify())
     .pipe(dest(path.dist.js))

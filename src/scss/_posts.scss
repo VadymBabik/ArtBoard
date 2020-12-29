@@ -13,6 +13,7 @@
 
   &__item {
     padding-bottom: 28px;
+
     &:last-child {
       display: none;
     }
@@ -55,28 +56,62 @@
 
 @media (min-width: 768px) {
   .posts {
-     &__item {
-       display: flex;
-       &:last-child {
-         display: flex;
-       }
-     }
-   }
+    &__item {
+      display: flex;
+
+      &:last-child {
+        display: flex;
+      }
+    }
+  }
   .post {
     &__text {
       display: initial;
     }
-    &__about{
+
+    &__about {
       margin-left: 20px;
       //align-items: flex-start ;
     }
+
     &__title {
       font-size: 16px;
       margin-top: 0;
     }
+
     &__subtitle {
       font-size: 12px;
-      }
+    }
+  }
+
 }
+
+@media (min-width: 1200px) {
+  .posts {
+    &__gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+      display: flex;
+      //width: calc(100% / 2);
+    }
+
+    &__title {
+      margin-bottom: 24px;
+      margin-top: 66px;
+    }
+  }
+
+
+  .post {
+
+    &__about {
+      margin-left: 20px;
+      //align-items: flex-start ;
+    }
+
+  }
 
 }

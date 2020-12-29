@@ -1,35 +1,65 @@
-.instagram{
-  padding:38px 0 42px;
-  &__naw{
+.instagram {
+  padding: 38px 0 42px;
+
+  &__naw {
     display: flex;
     justify-content: space-between;
     margin-bottom: 13px;
 
   }
-  &__last{
-    text-decoration: none;
-    &:hover{
-        cursor: pointer;
-      }
-  }
-  &__our{
-    text-decoration: none;
-    display: none;
-    &:hover{
+
+  &__last {
+    padding: 0;
+    border: none;
+    background: initial;
+
+    &:hover {
       cursor: pointer;
     }
   }
-  &__img{
+
+  &__our {
+    text-decoration: none;
+    display: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__picture {
     width: 301px;
     height: 301px;
+    min-width: 0;
   }
 }
 
 @media (min-width: 768px) {
   .instagram {
+    background: $instBG;
+
     &__our {
       display: initial;
+      padding: 0;
+      border: none;
+      //font: inherit;
+      color: #4E4E4E;;
       //font-size: 13px;
+      background: initial;
+    }
+
+    &__picture {
+      width: 249px;
+      height: 249px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .instagram {
+    &__picture {
+      width: 285px;
+      height: 285px;
     }
   }
 }

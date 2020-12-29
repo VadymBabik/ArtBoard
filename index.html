@@ -33,19 +33,19 @@
 		</ul>
 	</section>
 	<section class="container">
+		
 		<picture>
 			<source
-					media="(min-width: 768px)"
-					srcset="./dist/img/intro/intro-w768.jpg"
+					media="(min-width: 768px) and (max-width: 1199px)" srcset="./dist/img/intro/intro-w768.jpg"
 			/>
 			<source
-					media="(min-width: 1200px)"
-					srcset="./dist/img/intro/intro-w1200.jpg"
+					media="(min-width: 1200px)" srcset="./dist/img/intro/intro-w1200.jpg"
 			/>
 			<img src="./dist/img/intro/intro-w320.jpg" alt="Picture"/>
 		</picture>
 	</section>
 </header>
+
 
 <main>
 	<section class="posts container">
@@ -116,18 +116,16 @@
 	
 	<section class="instagram">
 		<div class="instagram__naw container">
-			<a href="#" class="title instagram__last">- Latest Instagram Shots</a>
-			<a href="#" class="title instagram__our">go to our instagram page -</a>
+			
+			<button class="title slick-arrow slick-prev instagram__last">- Latest Instagram Shots</button>
+			<button class="title slick-arrow slick-next instagram__our">go to our instagram page -</button>
 		</div>
 		<div class="instagram__gallery container">
-			<img
-					class="instagram__img"
-					src="./dist/img/instagram_shots/i_shots1.jpg"
-					alt="Picture"
-			/>
-			<!--				<img src="./dist/img/instagram_shots/i_shots2.jpg" alt="Picture"/>-->
-			<!--				<img src="./dist/img/instagram_shots/i_shots3.jpg" alt="Picture"/>-->
-			<!--				<img src="./dist/img/instagram_shots/i_shots4.jpg" alt="Picture"/>-->
+			
+			<img class="instagram__picture" src="./dist/img/instagram_shots/i_shots1.jpg" alt="Picture"/>
+			<img class="instagram__picture" src="./dist/img/instagram_shots/i_shots2.jpg" alt="Picture"/>
+			<img class="instagram__picture" src="./dist/img/instagram_shots/i_shots3.jpg" alt="Picture"/>
+			<img class="instagram__picture" src="./dist/img/instagram_shots/i_shots4.jpg" alt="Picture"/>
 		</div>
 	</section>
 </main>
