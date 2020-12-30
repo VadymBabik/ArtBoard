@@ -9,24 +9,21 @@ function open() {
   document.querySelector(".fa-bars").classList.toggle("show");
 }
 
-$(document).ready(function () {
-  $(".instagram__gallery").slick({
-    slidesToShow: 4,
-
-    // variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 320,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-    ],
-  });
+let mySwiper = new Swiper(".swiper-container", {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 9,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  },
 });

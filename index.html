@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8"/>
-	<!-- <link rel="shortcut icon" href="#" type="image/x-icon">   -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -114,18 +113,26 @@
 		</div>
 	</section>
 	
-	<section class="instagram">
+	<section class="instagram ">
 		<div class="instagram__naw container">
-			
-			<button class="title slick-arrow slick-prev instagram__last">- Latest Instagram Shots</button>
-			<button class="title slick-arrow slick-next instagram__our">go to our instagram page -</button>
+			<p class="title swiper-button-prev  instagram__last">- Latest Instagram Shots</p>
+			<p class="title swiper-button-next  instagram__our">go to our instagram page -</p>
 		</div>
-		<div class="instagram__gallery container">
-			
-			<img class="instagram__picture" src="./dist/img/instagram_shots/i_shots1.jpg" alt="Picture"/>
-			<img class="instagram__picture" src="./dist/img/instagram_shots/i_shots2.jpg" alt="Picture"/>
-			<img class="instagram__picture" src="./dist/img/instagram_shots/i_shots3.jpg" alt="Picture"/>
-			<img class="instagram__picture" src="./dist/img/instagram_shots/i_shots4.jpg" alt="Picture"/>
+		<div class="instagram__inner container swiper-container">
+			<div class="instagram__gallery container swiper-wrapper">
+				<div class="instagram__picture swiper-slide">
+					<img src="./dist/img/instagram_shots/i_shots1.jpg" alt="Picture"/>
+				</div>
+				<div class="instagram__picture swiper-slide">
+					<img src="./dist/img/instagram_shots/i_shots2.jpg" alt="Picture"/>
+				</div>
+				<div class="instagram__picture swiper-slide">
+					<img src="./dist/img/instagram_shots/i_shots3.jpg" alt="Picture"/>
+				</div>
+				<div class="instagram__picture swiper-slide">
+					<img src="./dist/img/instagram_shots/i_shots4.jpg" alt="Picture"/>
+				</div>
+			</div>
 		</div>
 	</section>
 </main>
@@ -138,12 +145,12 @@
 			amet sed donec malesuada ullamcorper odio. <span class="footer__text-second">Curabitur blandit tempus
 			porttitor vollisky inceptos mollisestor.</span>
 		</p>
-		<div class="footer__social mesenger">
-			<a class="mesenger__icon" href="#"><img src="./dist/img/icon/rss.svg" alt="mesengers"/></a>
-			<a class="mesenger__icon" href="#"><img src="./dist/img/icon/fb.svg" alt="mesengers"/></a>
-			<a class="mesenger__icon" href="#"><img src="./dist/img/icon/t.svg" alt="mesengers"/></a>
-			<a class="mesenger__icon" href="#"><img src="./dist/img/icon/drib.svg" alt="mesengers"/></a>
-			<a class="mesenger__icon" href="#"><img src="./dist/img/icon/p.svg" alt="mesengers"/></a>
+		<div class="footer__social messenger">
+			<a class="messenger__icon" href="#"><img src="./dist/img/icon/rss.svg" alt="mesengers"/></a>
+			<a class="messenger__icon" href="#"><img src="./dist/img/icon/fb.svg" alt="mesengers"/></a>
+			<a class="messenger__icon" href="#"><img src="./dist/img/icon/t.svg" alt="mesengers"/></a>
+			<a class="messenger__icon" href="#"><img src="./dist/img/icon/drib.svg" alt="mesengers"/></a>
+			<a class="messenger__icon" href="#"><img src="./dist/img/icon/p.svg" alt="mesengers"/></a>
 		</div>
 		
 		<address class="footer__address address">

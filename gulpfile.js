@@ -66,7 +66,7 @@ const style = () =>
     .pipe(browserSync.stream());
 
 const scripts = () =>
-  src(["src/js/jquery-3.5.1.min.js", "src/js/slick.min.js", "src/js/script.js"])
+  src(["src/js/swiper-bundle.min.js", "src/js/script.js"])
     .pipe(concat("scripts.min.js"))
     .pipe(uglify())
     .pipe(dest(path.dist.js))
